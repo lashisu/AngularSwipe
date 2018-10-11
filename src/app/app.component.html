@@ -1,0 +1,14 @@
+<div style="text-align:center">
+  <h1>
+    Angular Material Tab Swipe Example
+  </h1>
+</div>
+<div (swipeleft)="swipe(selctedIndex, $event)" (swiperight)="swipe(selctedIndex, $event)">
+  <mat-tab-group class="demo-tab-group" [(selectedIndex)]="selctedIndex">
+    <mat-tab label="{{labels[i]}}" *ngFor="let content of contents; let i = index">
+      <div class="demo-tab-content">
+        {{content}}
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

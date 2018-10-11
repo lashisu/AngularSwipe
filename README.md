@@ -1,0 +1,1 @@
+# Add swipe gestures support for Angular Material tabs with HammerJS
